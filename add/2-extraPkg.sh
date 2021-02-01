@@ -76,5 +76,4 @@ git clone --depth=1 https://github.com/zcy85611/openwrt-luci-kcp-udp
 
 # Add OpenAppFilter
 git clone --depth=1 https://github.com/destan19/OpenAppFilter
-popd
 
