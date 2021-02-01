@@ -1,3 +1,6 @@
 make defconfig
 
-make download -j5
+for i in $(seq 5); do
+    make download -j5
+    [ $? = 0 ] && break
+done

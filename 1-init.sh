@@ -5,7 +5,7 @@ sudo apt-get -y install build-essential asciidoc binutils bzip2 gawk gettext git
 
 git clone https://github.com/coolsnowwolf/lede
 
-cp -rf add/* lede/
+cp -ar add/. lede/
 
 cd lede
 chmod 777 *.sh
