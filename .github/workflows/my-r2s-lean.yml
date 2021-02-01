@@ -4,6 +4,7 @@ on:
   workflow_dispatch:
 env:
   TZ: Asia/Shanghai
+  ZIP_PWD: ${{ secrets.ZIP_PWD }}
   
 
 jobs:
