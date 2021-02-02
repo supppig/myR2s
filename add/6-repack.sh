@@ -12,5 +12,5 @@ for i in 16g 2g; do
     mv fix.img.gz ./supppig/sdcard-${i}-${md}.img.gz
 done
 
-cp ./bin/targets/rockchip/armv8/openwrt-rockchip-armv8-friendlyarm_nanopi-r2s-squashfs-sysupgrade.img.gz ./supppig
-cp ./bin/targets/rockchip/armv8/config.buildinfo ./supppig
+mv ./bin/targets/rockchip/armv8/openwrt-rockchip-armv8-friendlyarm_nanopi-r2s-squashfs-sysupgrade.img.gz ./supppig
+mv ./bin/targets/rockchip/armv8/config.buildinfo ./supppig
