@@ -1,6 +1,8 @@
 name: 专属r2s-lean-openwrt
 
 on:
+  schedule:
+    - cron: 26 18 * * *
   workflow_dispatch:
 env:
   TZ: Asia/Shanghai
