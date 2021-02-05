@@ -25,6 +25,7 @@ jobs:
       - name: ffff
         run: |
           # cd lede
+          cd add
           bash wht.sh
 
       # - name: 添加额外package
