@@ -15,4 +15,6 @@ echo $da >x.txt
 echo >>x.txt
 cat url.log >>x.txt
 
+echo "hub release create ${assets[@]} -F x.txt \"$da\""
+
 hub release create ${assets[@]} -F x.txt "$da"
