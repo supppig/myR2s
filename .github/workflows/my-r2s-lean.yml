@@ -22,44 +22,49 @@ jobs:
         run: |
           sh 1-init.sh
 
-      - name: 添加额外package
+      - name: ffff
         run: |
           cd lede
-          sh 2-extraPkg.sh
+          bash wht.sh
 
-      - name: 更新feeds
-        run: |
-          cd lede
-          sh 3-feeds.sh
+      # - name: 添加额外package
+      #   run: |
+      #     cd lede
+      #     sh 2-extraPkg.sh
 
-      - name: 预下载
-        run: |
-          cd lede
-          sh 4-download.sh
+      # - name: 更新feeds
+      #   run: |
+      #     cd lede
+      #     sh 3-feeds.sh
 
-      - name: 构建
-        run: |
-          cd lede
-          sh 5-build.sh
+      # - name: 预下载
+      #   run: |
+      #     cd lede
+      #     sh 4-download.sh
 
-      - name: 重打包固件
-        run: |
-          cd lede
-          sh 6-repack.sh
+      # - name: 构建
+      #   run: |
+      #     cd lede
+      #     sh 5-build.sh
 
-      - name: 上传固件
-        run: |
-          cd lede
-          sh 7-upload.sh
+      # - name: 重打包固件
+      #   run: |
+      #     cd lede
+      #     sh 6-repack.sh
 
-      - name: 发布Release
-        run: |
-          cd lede
-          bash 8-release.sh
+      # - name: 上传固件
+      #   run: |
+      #     cd lede
+      #     sh 7-upload.sh
 
-      - name: 删除旧Releases
-        uses: dev-drprasad/delete-older-releases@v0.1.0
-        with:
-          keep_latest: 10
-          delete_tags: true
+      # - name: 发布Release
+      #   run: |
+      #     cd lede
+      #     bash 8-release.sh
+
+      # - name: 删除旧Releases
+      #   uses: dev-drprasad/delete-older-releases@v0.1.0
+      #   with:
+      #     keep_latest: 10
+      #     delete_tags: true
 
