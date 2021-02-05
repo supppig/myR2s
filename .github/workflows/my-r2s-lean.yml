@@ -22,35 +22,35 @@ jobs:
         run: |
           sh 1-init.sh
 
-      - name: 添加额外package
-        run: |
-          cd lede
-          sh 2-extraPkg.sh
+      # - name: 添加额外package
+      #   run: |
+      #     cd lede
+      #     sh 2-extraPkg.sh
 
-      - name: 更新feeds
-        run: |
-          cd lede
-          sh 3-feeds.sh
+      # - name: 更新feeds
+      #   run: |
+      #     cd lede
+      #     sh 3-feeds.sh
 
-      - name: 预下载
-        run: |
-          cd lede
-          sh 4-download.sh
+      # - name: 预下载
+      #   run: |
+      #     cd lede
+      #     sh 4-download.sh
 
-      - name: 构建
-        run: |
-          cd lede
-          sh 5-build.sh
+      # - name: 构建
+      #   run: |
+      #     cd lede
+      #     sh 5-build.sh
 
-      - name: 重打包固件
-        run: |
-          cd lede
-          sh 6-repack.sh
+      # - name: 重打包固件
+      #   run: |
+      #     cd lede
+      #     sh 6-repack.sh
 
-      - name: 上传固件
-        run: |
-          cd lede
-          sh 7-upload.sh
+      # - name: 上传固件
+      #   run: |
+      #     cd lede
+      #     sh 7-upload.sh
 
       - name: 发布Release
         run: |
