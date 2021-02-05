@@ -1,3 +1,5 @@
+set -x
+
 assets=()
 for asset in ./supppig/*; do
     assets+=("-a" "$asset")
