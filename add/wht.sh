@@ -1,3 +1,5 @@
+set -x
+
 echo 1234545 >url.log
 
 mkdir supppig
