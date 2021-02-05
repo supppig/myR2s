@@ -28,4 +28,4 @@ hub release --help
 echo "************************"
 
 # hub release create ${assets[@]} -F ./x.txt "$da"
-hub release create -F ./x.txt "$da"
+cat x.txt | hub release create -F - "$da"
